@@ -8,7 +8,7 @@ resource "aws_security_group" "worker_group_mgmt_one" {
         protocol = "tcp"
 
         cidr_blocks = [
-            "10.0.0.0/8"
+            "90.0.0.0/16"
         ]
     }
 }
@@ -23,7 +23,7 @@ resource "aws_security_group" "worker_group_mgmt_two" {
         protocol = "tcp"
 
         cidr_blocks = [
-            "10.0.0.0/8"
+            "90.0.0.0/16"
         ]
     }
 }
@@ -38,7 +38,7 @@ resource "aws_security_group" "all_worker_mgmt" {
         protocol = "tcp"
 
         cidr_blocks = [
-            "10.0.0.0/8"
+            "90.0.0.0/16"
         ]
     }
 }
